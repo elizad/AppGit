@@ -1,5 +1,5 @@
 import React from 'react';
-import GithubUser from  './GithubUser';
+//import GithubUser from  './GithubUser';
 
 class Followers extends React.Component {
     constructor() {
@@ -19,6 +19,17 @@ class Followers extends React.Component {
             );
     }
 
+    renderStat(stat) {
+        return (
+            <li key={stat.name} className="user-info__stat">
+                <Link to={stat.url}>
+                    <p className="user-info__stat-value">{stat.value}</p>
+                    <p className="user-info__stat-name">{stat.name}</p>
+                </Link>
+            </li>
+        );
+    }
+
     render(){
                 if(!this.state.followers) {
                     return <div>LOADING FOLLOWERS...</div>
@@ -28,7 +39,7 @@ class Followers extends React.Component {
                     <div className="container followers-page">
                         <h2>Followers of {this.props.params.username}</h2>
                         <ul>
-                            {this.state.followers.map( <GithubUser username="elizad"> </GithubUser> )}
+                            {this.state.followers.map()}
                         </ul>
                     </div>
                 );
