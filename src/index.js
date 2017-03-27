@@ -16,12 +16,12 @@ import User from './components/User';
 
 
 const routes = (
-    <Router history={browserHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute component={Search}/>
-            <Route path="user/:username" component={User}/>
-        </Route>
-    </Router>
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Search} />
+      <Route path="user/:username" component={User} />
+    </Route>
+  </Router>
 );
 
 ReactDOM.render(routes, document.getElementById('root'));
