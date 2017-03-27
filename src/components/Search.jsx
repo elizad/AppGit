@@ -16,15 +16,15 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="container text-center">
-        <h2>Search for GitHub username</h2>
+      <header className="container text-center">
+        <h2 className="modal-title">Search for GitHub username</h2>
         <div className="col">
           <form onSubmit={this._handleSubmit}>
             <input ref="userInput" className="" type="text" />
             <button className="btn btn-primary">Search</button>
           </form>
         </div>
-      </div>
+      </header>
     );
   }
 }

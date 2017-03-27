@@ -2,7 +2,7 @@
 
 ABOUT
 
-This app is intended to allow searches users within github using Github API. Searching starts using the search box at the header of the app. Once the form is send, the found user is displayed along with links to:
+This app is intended to allow searching users within GitHub accounts using GitHub API. Searching starts using the search box at the header of the app. Once the form is send, the found user is displayed along with links to:
 
  repos
  followers
